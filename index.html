@@ -3,30 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <title>저녁 메뉴 추천</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Lotto Number Generator</h1>
+        <h1>오늘 저녁 뭐 먹지?</h1>
         <div class="theme-switch-wrapper">
             <label class="theme-switch" for="checkbox">
                 <input type="checkbox" id="checkbox" />
                 <div class="slider round"></div>
             </label>
         </div>
-        <div class="lotto-display">
-            <lotto-ball></lotto-ball>
-            <lotto-ball></lotto-ball>
-            <lotto-ball></lotto-ball>
-            <lotto-ball></lotto-ball>
-            <lotto-ball></lotto-ball>
-            <lotto-ball></lotto-ball>
+        <div id="menu-display">
+            <p>버튼을 눌러 저녁 메뉴를 추천 받으세요!</p>
         </div>
-        <button id="generate-btn">Generate Numbers</button>
+        <button id="recommend-btn">메뉴 추천!</button>
         <div class="history">
-            <h2>History</h2>
-            <ul id="history-list"></ul>
+            <h2>추천 기록</h2>
+            <ul id="recommendation-history"></ul>
         </div>
     </div>
     <script src="main.js"></script>

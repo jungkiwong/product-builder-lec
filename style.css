@@ -7,7 +7,6 @@
     --button-background: #1a73e8;
     --button-text: white;
     --history-item-background: #f8f9fa;
-    --ball-size: 60px;
     --radial-gradient-start: #ffffff;
     --radial-gradient-end: #f0f2f5;
 }
@@ -55,28 +54,24 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.lotto-display {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+#menu-display {
     margin: 2rem 0;
-}
-
-lotto-ball {
-    width: var(--ball-size);
-    height: var(--ball-size);
-    border-radius: 50%;
+    padding: 1rem;
+    border: 2px dashed var(--header-color);
+    border-radius: 8px;
+    min-height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
 }
 
-#generate-btn {
+#menu-display p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+#recommend-btn {
     background-color: var(--button-background);
     color: var(--button-text);
     border: none;
@@ -88,7 +83,7 @@ lotto-ball {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#generate-btn:hover {
+#recommend-btn:hover {
     filter: brightness(1.2);
     transform: translateY(-2px);
 }
@@ -103,14 +98,14 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-#history-list {
+#recommendation-history {
     list-style: none;
     padding: 0;
     max-height: 200px;
     overflow-y: auto;
 }
 
-#history-list li {
+#recommendation-history li {
     background: var(--history-item-background);
     padding: 0.75rem;
     border-radius: 8px;
