@@ -1,3 +1,13 @@
+const themeSwitch = document.querySelector('#checkbox');
+
+themeSwitch.addEventListener('change', () => {
+    if (themeSwitch.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.removeAttribute('data-theme');
+    }
+});
+
 class LottoBall extends HTMLElement {
     constructor() {
         super();
